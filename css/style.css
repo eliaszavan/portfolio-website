@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  --black: #04080f;
+  --black2: #111118;
+  --white: #fcfcfc;
+  --white2: #fcf7f8;
 }
 
 body,html {
@@ -13,13 +18,53 @@ body,html {
 }
 
 .navbar {
-  background-color: #333;
+  background-color: var(--black);
   color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  height: 50px;
+  height: 80px;
+}
+
+h1 {
+  color: var(--white);
+  text-align: center; /* Centraliza todo o texto */
+}
+
+.title {
+  font-size: 48px;
+  transition: 0.3s;
+}
+
+.title:hover {
+  font-size: 52px;
+}
+
+.button {
+  margin-top: 10px;
+  padding: 18px 36px;
+  border-radius: 10px;
+  color: var(--white);
+  background-color: var(--black);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: var(--white2);
+  color: var(--black2);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 750px;
 }
 
 .logo {
@@ -39,13 +84,13 @@ body,html {
 
 .nav-links-desktop a,
 .nav-links-mobile a {
-  color: #fff;
+  color: var(--white);
   text-decoration: none;
   transition: 0.3s;
 }
 
 .nav-links-desktop a:hover {
-  color: #984de3;
+  color: var(--white2);
 }
 
 .mobile-menu {
@@ -80,7 +125,7 @@ body,html {
   font-size: 24px;
   background: none;
   border: none;
-  color: #fff;
+  color: var(--white);
   cursor: pointer;
   display: none;
 }
@@ -99,6 +144,15 @@ body,html {
 @media (max-width: 768px) {
   html {
     font-size: 12px;
+  }
+
+  .title {
+    font-size: 42px; /* Tamanho da fonte do h1 em telas menores */
+    transition: font-size 0.3s ease; /* Suaviza a transição ao mudar o tamanho da fonte */
+  }
+  
+  .title:hover {
+    font-size: 46px; /* Tamanho da fonte ao passar o mouse no h1 */
   }
 
   .nav-links-desktop {
