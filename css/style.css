@@ -180,6 +180,16 @@ h1 {
   cursor: pointer;
 }
 
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.nav-list {
+  width: 100vw; /* Garante que a navbar não ultrapasse a largura da tela */
+  overflow-x: hidden;
+}
+
 .mobile-menu div {
   width: 32px;
   height: 2px;
@@ -258,10 +268,6 @@ h1 {
     opacity: 1;
     transform: translateX(0);
   }
-}
-
-body {
-    overflow-x: hidden;
 }
 
 @media (max-width: 768px) {
