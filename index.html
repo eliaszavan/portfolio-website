@@ -7,40 +7,67 @@
   <title>Portfolio 2024</title>
   <link rel="icon" href="assets/icon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <nav class="navbar">
-    <div class="logo">Portfolio</div>
-    <ui class="nav-links-desktop">
-      <li><a href="#">Sobre Mim</a></li>
-      <li><a href="#">Projetos</a></li>
-      <li><a href="#">Contatos</a></li>
-    </ui>
-    <div class="mobile-menu" id="mobileMenu">
-      <button class="close" id="closeButton">
-        <i class="fa fa-times"></i>
-      </button>
-      <ui class="nav-links-mobile">
-        <li><a href="#">Sobre Mim</a></li>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">Portfolio</div>
+
+      <div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-list">
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Sobre</a></li>
         <li><a href="#">Projetos</a></li>
-        <li><a href="#">Contatos</a></li>
-      </ui>
-    </div>
-    <button class="more" id="moreButton">
-      <i class="fa fa-bars"></i>
-    </button>
-  </nav>
+        <li><a href="#">Contato</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
   <div class="container">
+    <div class="alert">
+
+    </div>
     <h1 class="title">Veja todos os meus projetos!</h1>
     <a href="#" class="button">Projetos</a>
   </div>
+  <footer class="footer">
+    <section class="logo-container">
+      <a href="https://linkedin.com/in/eliaszavan" target="_blank" class="card-container linkedin">
+        <img src="assets/logo/linkedin-logo.svg" class="card-image">
+      </a>
 
-  <script src="js/script.js"></script>
+      <a href="https://api.whatsapp.com/send?phone=5544999294823&text=Ol%C3%A1%2C%20Elias!%20Vim%20pelo%20site%20de%20portfolio." target="_blank" class="card-container whatsapp">
+        <img src="assets/logo/whatsapp-logo.svg" class="card-image">
+      </a>
+
+      <a href="https://github.com/eliaszavan" target="_blank" class="card-container github">
+        <img src="assets/logo/github-logo.svg" class="card-image">
+      </a>
+
+      <a href="https://youtube.com/@eliasyohan" target="_blank" class="card-container youtube">
+        <img src="assets/logo/youtube-logo.svg" class="card-image">
+      </a>
+      
+      <div class="card-container email">
+        <img src="assets/logo/email-logo.svg" class="card-image">
+      </div>
+    </section>
+  </footer>
+  <script src="js/alert.js"></script>
+  <script src="js/mobile-navbar.js"></script>
 </body>
 
 </html>
