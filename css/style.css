@@ -260,10 +260,11 @@ h1 {
   }
 }
 
-@media (max-width: 999px) {
-  body {
+body {
     overflow-x: hidden;
-  }
+}
+
+@media (max-width: 768px) {
 
   .nav-list {
     position: absolute;
