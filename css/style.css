@@ -180,14 +180,9 @@ h1 {
   cursor: pointer;
 }
 
-html, body {
-  width: 100%;
+body {
   overflow-x: hidden;
-}
-
-.nav-list {
-  width: 100vw; /* Garante que a navbar não ultrapasse a largura da tela */
-  overflow-x: hidden;
+  touch-action: none;
 }
 
 .mobile-menu div {
