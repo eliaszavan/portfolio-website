@@ -180,11 +180,6 @@ h1 {
   cursor: pointer;
 }
 
-body {
-  overflow-x: hidden;
-  touch-action: none;
-}
-
 .mobile-menu div {
   width: 32px;
   height: 2px;
@@ -266,7 +261,10 @@ body {
 }
 
 @media (max-width: 768px) {
-
+  body {
+    overflow-x: hidden;
+    touch-action: pan-y;
+  }
   .nav-list {
     position: absolute;
     top: 8vh;
@@ -289,11 +287,7 @@ body {
   .mobile-menu {
     display: block;
   }
-
-
-
-
-
+  
   .message {
     padding: 16px 30px;
     font-size: 16px;
